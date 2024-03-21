@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"><!--checar la fuente-->
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="Imagenes/Logo.png"></h1>
+    </header>
+
+    <main>
+        <section class="textoEncriptar">
+            <div class="area">
+                <textarea class="campo-texto" id="campoTexto" placeholder="Ingrese el texto aqui"></textarea> 
+            </div>
+            <div class="instrucciones">
+                <img src="Imagenes/alerta.png" width="15px" height="15px" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container-botones">
+                <button class="boton-encriptar" type="button" onclick="encriptar()"> Encriptar!</button>
+                <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar!</button>
+            </div>
+        </section>
+
+        <section class="textoEncriptado" >
+                <img src="Imagenes/persona leyendo.png" alt="persona leyendo" class="imagen-persona">
+                
+            
+            <div class="mensaje-encriptado">
+                <h2 class="h2-seccion2"id="mensajeFinal">Ningún mensaje fue <br>encontrado</h2>
+                <p class="parrafo-seccion2">Ingresa el texto que desees encriptar o <br>desencriptar</p>
+            </div>
+            <div class="container-resultado">
+                <h3 class="h3-resultado">Mensaje encriptado con exito!</h3>
+                <textarea class="area-result" ></textarea>
+            </div>
+            <div class="container-copiar">
+                <button class="boton-copiar" id="botonCopiar" type="button" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="nombre">Code by Aneth Cecilia Hernández E.</p>
+        <a href="https://github.com/" target="blank" ><img src="Imagenes/Github_Logo.png" class="redes"></a>
+        <a href="https://www.linkedin.com/in/aneth-cecilia-hern%C3%A1ndez-esquivel-60684a2b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank" target="blank" ><img src="Imagenes/LinkedIn_logo-two.png" class="redes"></a>
+        <!-- agregar link de github -->
+       <!--  <div >
+            <a href="https://github.com/" target="blank" >
+                <img src="Imagenes/Github_Logo.png" class="redes">
+            </a>
+        </div>
+        
+        <div >
+            <a href="https://www.linkedin.com/in/aneth-cecilia-hern%C3%A1ndez-esquivel-60684a2b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank" >
+                <img src="Imagenes/LinkedIn_logo.png" class="redes">
+            </a>
+        </div> -->
+       
+
+
+
+    </footer>
+    
+   <script src="app.js" ></script>
+</body>
+</html>
